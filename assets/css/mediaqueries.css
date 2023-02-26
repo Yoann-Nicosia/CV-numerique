@@ -2,6 +2,10 @@
     .compImgTxt img{
         height:100px;
     }
+
+    .ligne{
+        padding-left: 10vw;
+    }
 }
 
 @media (max-width: 768px) {

@@ -122,6 +122,16 @@ h2{
     padding-left: 15vw;
 }
 
+/* Section parcours */
+.schoolCareer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.schoolYears{
+    color:#048b9a;
+}
+
 /* Section compétences */
 .imgSize{
     height: 100px;
