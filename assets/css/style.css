@@ -147,7 +147,8 @@ h2{
 .ligne{
     display: flex;
     justify-content: left;
-    padding-left:15vw;
+    flex-wrap: wrap;
+    padding-left:8vw;
 }
 
 #imgGit{
@@ -210,24 +211,18 @@ h2{
 
 /* Section projets */
 
-#myProjects .ul{
-    display:flex;
-    justify-content: center;
-    padding:0;
-    padding-bottom: 20px;
-}
 
 .allProjects{
     display: flex;
-    flex-direction: column;
-    justify-content: left;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #myProjects .imgContainer{
     list-style-type: none;
     width: 22vw;
     height: 22vw;
-    margin: 0 10px 0 10px;
+    margin: 20px 10px 0 10px;
 }
 
 .imgContainer{

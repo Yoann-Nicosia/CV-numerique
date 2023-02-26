@@ -7,18 +7,37 @@
         padding-left: 10vw;
         flex-wrap: wrap;
     }
+
+    .allProjects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    #myProjects .imgContainer{
+        list-style-type: none;
+        width: 40vw;
+        height: 40vw;
+        margin: 20px 10px 0 10px;
+    }
 }
 
 @media (max-width: 768px) {
-
+    .ligne{
+        padding-left: 10vw;
+        flex-wrap: wrap;
+        padding-left: 0;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
     .ligne{
+        padding-left: 10vw;
+        flex-wrap: wrap;
         padding-left: 0;
         justify-content: center;
     }
-
     #accueilRight{
         display:none;
     }
@@ -36,6 +55,20 @@
 
     #aboutMeSection p{
         padding-left: 20px;
+    }
+
+    .allProjects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    #myProjects .imgContainer{
+        list-style-type: none;
+        width: 90vw;
+        height: 90vw;
+        margin: 20px 10px 0 10px;
     }
 
 }
