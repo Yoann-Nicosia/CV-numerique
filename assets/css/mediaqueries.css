@@ -1,3 +1,19 @@
+@media (max-width: 1450px) {
+    .allProjects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    #myProjects .imgContainer{
+        list-style-type: none;
+        width: 29vw;
+        height: 29vw;
+        margin: 20px 10px 0 10px;
+    }
+}
+
+
 @media (max-width: 1024px) {
     .compImgTxt img{
         height:100px;
@@ -29,7 +45,35 @@
         padding-left: 0;
         justify-content: center;
     }
+
+    .allProjects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    #myProjects .imgContainer{
+        list-style-type: none;
+        width: 45vw;
+        height: 45vw;
+        margin: 20px 10px 0 10px;
+    }
 }
+@media (max-width: 640px) {
+    .allProjects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    #myProjects .imgContainer{
+        list-style-type: none;
+        width: 90vw;
+        height: 90vw;
+        margin: 20px 10px 0 10px;
+    }
+}
+
 
 @media (max-width: 480px) {
     .ligne{
