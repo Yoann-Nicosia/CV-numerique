@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.cdnfonts.com/css/made-tommy-soft-outline" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
+    <script async src="./assets/javascript/vue.js"></script>
     <title>Yoann Nicosia CV numérique</title>
 </head>
 <body>
@@ -14,20 +17,21 @@
             <img id="profilePicture" alt="image de profil" src="./assets/img/profile_picture.jpg">
             <ul id="navList">
                 <a href="#"><li>Accueil</li></a>
-                <a href="#"><li>A propos de moi</li></a>
+                <a href="#aboutMeSection"><li>A propos de moi</li></a>
                 <a href="#"><li>Mon parcours</li></a>
-                <a href="#"><li>Mes compétences</li></a>
-                <a href="#"><li>Mes projets</li></a>
+                <a href="#skills"><li>Mes compétences</li></a>
+                <a href="#myProjects"><li>Mes projets</li></a>
                 <a href="#"><li>Mes centres d'intérêts</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="#footer"><li>Contact</li></a>
             </ul>
         </nav>
-        <div class="blueBar"></div>
+        <div id="blueRod" class="blueRod"></div>
     </header>
     <main>
+        <button id="changeTheme" onclick="changeTheme()">Changer thème</button>
         <section id="accueil">
             <div id="accueilLeft">
-                <h1><span class="span"><span class="letterSpan">Y</span><span class="letterSpan">o</span><span class="letterSpan">a</span><span class="letterSpan">n</span><span class="letterSpan">n</span> Nicosia</span> Etudiant, développeur web</h1>
+                <h1><span class="span"><span class="letterSpan">Y</span><span class="letterSpan">o</span><span class="letterSpan">a</span><span class="letterSpan">n</span><span class="letterSpan">n</span> Nicosia</span> Etudiant en développement web</h1>
             </div>
             <div id="accueilRight">
                 <p></p>
@@ -36,47 +40,136 @@
         <section id="aboutMeSection">
             <div>
                 <h2>À propos de moi</h2>
-                <p>Je m'appelle Yoann Nicosia</p>
+                <p>Je m'appelle Yoann Nicosia, je suis actuellement en première année d'étude à l'école La Manu à Amiens dans le développement web. </p>
+                <p></p>
             </div>
         </section>
         <section id=""></section>
-        <section id="skills"></section>
-        <section id="myProjects">
-            <h2>Mes projets</h2>
-            <div>
-                <div class="ul">
-                    <div class="imgContainer">
-                        <div class="infoHover">
-                            <h3>Projet restaurant</h3>
-                            <p>Petit site vitrine réalisé en HTML/CSS</p>
-                            <a target="_blank" href="https://yoann-nicosia.github.io/Projet-site-restaurant/">Voir plus -></a>
-                        </div>
+
+
+        <!-- html, css, sql, bootstrap javascript, vuejs, php, wordpress | git, trello |   (en cours d'apprentissage) | adobe xd, figma, adobe photoshop, illustrator -->
+        <section id="skills">
+            <h2>Mes compétences</h2>
+            <div class="">
+                <h3>Compétences web</h3>
+                <div class="ligne">
+                    <div class="compImgTxt">
+                        <img class="imgSize" alt="html5" src="./assets/img/html.png">
+                        <p>HTML5</p>
                     </div>
-                    <div class="imgContainer">
-                        <div class="infoHover">
-                            <h3>Projet ...</h3>
-                            <p>petit projet de restaurant</p>
-                        </div>
+                    <div class="compImgTxt">
+                        <img class="imgSize" alt="CSS3" src="./assets/img/css.png">
+                        <p>CSS3</p>
                     </div>
-                    <div class="imgContainer">
-                        <div class="infoHover">
-                            <h3>Projet ...</h3>
-                            <p>petit projet de restaurant</p>
-                        </div>
+                    <div class="compImgTxt">
+                        <img class="imgSize" alt="sql" src="./assets/img/sql.png">
+                        <p>SQL</p>
                     </div>
-                    <div class="imgContainer">
-                        <div class="infoHover">
-                            <h3>Projet ...</h3>
-                            <p>petit projet de restaurant</p>
+                    <div class="compImgTxt">
+                        <img class="imgSize" alt="php" src="./assets/img/php.png">
+                        <p>PHP</p>
+                    </div>
+                    <div class="compImgTxt">
+                        <img class="imgSize" alt="javascript" src="./assets/img/javascript.png">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="compImgTxt">
+                        <img class="imgSize" alt="vuejs" src="./assets/img/vuejs.png">
+                        <p>Vuejs</p>
+                    </div>
+                    <div class="compImgTxt">
+                        <img class="imgSize" alt="bootstrap" src="./assets/img/bootsrap.png">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="compImgTxt">
+                        <img class="imgSize" alt="wordpress" src="./assets/img/wordpress.png">
+                        <p>Wordpress</p>
+                    </div>
+                </div>
+                <h3>Compétences web design</h3>
+                <div class="ligne">
+                        <div class="compImgTxt">
+                            <img class="imgSize" alt="figma" src="./assets/img/figma.png">
+                            <p>Figma</p>
+                        </div>
+                        <div class="compImgTxt">
+                            <img class="imgSize" alt="adobe xd" src="./assets/img/adobexd.png">
+                            <p>Adobe Xd</p>
+                        </div>
+                        <div class="compImgTxt">
+                            <img class="imgSize" alt="adobe illustrator" src="./assets/img/illustrator.png">
+                            <p>Adobe illustrator</p>
+                        </div>
+                        <div class="compImgTxt">
+                            <img class="imgSize" alt="adobe photoshop" src="./assets/img/photoshop.png">
+                            <p>Adobe Photoshop</p>
                         </div>
                     </div>
                 </div>
+                <h3>Gestion de projet</h3>
+                <div class="ligne">
+                    <div class="compImgTxt">
+                        <img id="imgGit" class="imgSize" alt="github" src="./assets/img/github.png">
+                        <p>Github</p>
+                    </div>
+                    <div class="compImgTxt">
+                        <img class="imgSize" alt="trello" src="./assets/img/trello.png">
+                        <p>Trello</p>
+                    </div>                  
+                </div>
             </div>
+        </section>
+
+        <section id="myProjects">            
+            <h2>Mes projets</h2>
+            <div class="allProjects">   
+                <div class="ul">
+                    <div class="imgContainer restauProject">
+                        <div class="infoHover">
+                            <h3>Projet site restaurant</h3>
+                            <p>Site vitrine réalisé en HTML/CSS</p>
+                            <a target="_blank" href="https://yoann-nicosia.github.io/Projet-site-restaurant/">Voir plus -></a>
+                        </div>
+                    </div>
+                    <div class="imgContainer instantGamingProject">
+                        <div class="infoHover">
+                            <h3>Projet instang gaming</h3>
+                            <p>Site vitrine HTML/CSS nous permettant de mettre en pratique les media queries.</p>
+                            <a target="_blank" href="https://yoann-nicosia.github.io/projet-instant-gaming/">Voir plus -></a>
+                        </div>
+                    </div>
+                    <div class="imgContainer lesVieillesCharettesProject">
+                        <div class="infoHover">
+                            <h3>Premier projet Wordpress</h3>
+                            <p>Mon premier projet Wordpress. Le but était de promouvoir un festival se déroulant à Amiens en créant un site vitrine. Il devait contenir des actualités, la liste des artistes présents, une programmation avec les horraires des différents concerts, les tarifs, une galerie photo et enfin un formulaire d'inscription</p>
+                            <a target="_blank" href="https://les-vielles-charrettes-amiens.fr/">Voir plus -></a>
+                        </div>
+                    </div>
+                    <div class="imgContainer javascriptRocketProject">
+                        <div class="infoHover">
+                            <h3>Projet javascript</h3>
+                            <p>Il s'agit de mon premier projet javascript visant à mettre en pratique mes cours de javascript.</p>
+                            <a target="_blank" href="https://yoann-nicosia.github.io/td-fusee-javascript/">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ul">
+                    <div class="imgContainer projectDogApi">
+                        <div class="infoHover">
+                            <h3>Petit projet api</h3>
+                            <p>Réalisation d'un exercice de mise en situation d'utilisation d'api, le tout codé avec le framework vuejs</p>
+                            <button><a target="_blank" href="https://yoann-nicosia.github.io/vuejs-dog-api/">Voir plus -></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>   
         </section>
         <section id="centerOfInterests"></section>
     </main>
-    <footer>
-
+    <footer id="footer">
+        
     </footer>
+    <script defer src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+
 </body>
 </html>

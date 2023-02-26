@@ -2,7 +2,11 @@ body{
     margin:0;
     background-color: #1d1d1d;
     color:white;
-    
+    font-family: 'MADE Tommy Soft 500', sans-serif; 
+}
+
+#changeTheme{
+    display:none;
 }
 
 /* Nav bar */
@@ -14,7 +18,7 @@ nav {
     background-color: #141414;
 }
 
-.blueBar{
+.blueRod{
     height: 2px;
     background-color: #048b9a;
 }
@@ -78,13 +82,17 @@ h1 .span {
 
 h1 .letterSpan:hover{
     color : #048b9a;
-    -webkit-transition: color 0.3s;
+    -webkit-transition: color 0.1s;
 }
 
 h2{
     font-family: 'MADE Tommy Soft 500', sans-serif;
-    padding-left: 25vw;
+    padding:30px 0 20px 25vw;
 
+}
+
+#skills h3{
+    padding: 20px 0 10px 15vw;
 }
 
 #accueilRight{
@@ -109,26 +117,133 @@ h2{
     display: flex;
 }
 
+/* Section à propos de moi */
+#aboutMeSection p{
+    padding-left: 15vw;
+}
+
+/* Section compétences */
+.imgSize{
+    height: 100px;
+}
+
+.compImgTxt{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px 30px 15px 30px;
+}
+
+.ligne{
+    display: flex;
+    justify-content: left;
+    padding-left:15vw;
+}
+
+#imgGit{
+    filter: invert(1);
+}
+
+
+
+/* .progress_bar .pro-bar {
+    background: hsl(0, 0%, 97%);
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
+    height:4px;
+    margin-bottom: 12px;
+    margin-top: 50px;
+    position: relative;
+}
+.progress_bar .progress_bar_title{
+    color: hsl(218, 4%, 50%);
+    font-size: 15px;
+    font-weight: 300;
+    position: relative;
+    top: -28px;
+    z-index: 1;
+}
+.progress_bar .progress_number{
+    float: right;
+    margin-top: -24px;
+}
+.progress_bar .progress-bar-inner {
+    background-color: hsl(0, 0%, 88%);
+    display: block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s linear 0s;
+}
+.progress_bar .progress-bar-inner:before {
+    content: "";
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    z-index: 1;
+}
+.progress_bar .progress-bar-inner:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: inherit;
+    border-radius: 50%;
+    position: absolute;
+    right: -4px;
+    top: -5px;
+} */
+
 /* Section projets */
 
 #myProjects .ul{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding:0;
+    padding-bottom: 20px;
+}
+
+.allProjects{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 #myProjects .imgContainer{
     list-style-type: none;
     width: 22vw;
     height: 22vw;
-
+    margin: 0 10px 0 10px;
 }
 
 .imgContainer{
     height: 100%;
-    background-image: url("../img/restauProject.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.restauProject{
+    background-image: url("../img/restauProject.png");
+}
+
+.instantGamingProject{
+    background-image: url("../img/instantGamingProject.png");
+}
+
+.lesVieillesCharettesProject{
+    background-image: url("../img/lesVieillesCharettes.png");
+}
+
+.javascriptRocketProject{
+    background-image: url("../img/javascriptRocketProject.png");    
+}
+
+.projectDogApi{
+    background-image: url("../img/projectDogApi.png");
 }
 
 .infoHover{
