@@ -11,6 +11,13 @@ body{
 
 /* Nav bar */
 
+header{
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index:1;
+}
+
 nav {
     display : flex;
     justify-content: start;
@@ -23,7 +30,7 @@ nav {
     background-color: #048b9a;
 }
 
-nav li:hover{
+nav a:hover{
     color : #048b9a;
     -webkit-transition: all 0.5s;
     transition: 0.5s;
@@ -42,9 +49,14 @@ nav a:hover::after {
     width: 100%;
 }
 
-nav a{
-    color:white;
+nav a {
+    color: white;
     text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #profilePicture{
@@ -93,6 +105,10 @@ h2{
 
 #skills h3{
     padding: 20px 0 10px 15vw;
+}
+
+#myProjects h3{
+    text-decoration: underline #046a76;
 }
 
 #accueilRight{
@@ -153,64 +169,13 @@ h2{
 
 #imgGit{
     filter: invert(1);
+    z-index: -1;
 }
-
-
-
-/* .progress_bar .pro-bar {
-    background: hsl(0, 0%, 97%);
-    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
-    height:4px;
-    margin-bottom: 12px;
-    margin-top: 50px;
-    position: relative;
-}
-.progress_bar .progress_bar_title{
-    color: hsl(218, 4%, 50%);
-    font-size: 15px;
-    font-weight: 300;
-    position: relative;
-    top: -28px;
-    z-index: 1;
-}
-.progress_bar .progress_number{
-    float: right;
-    margin-top: -24px;
-}
-.progress_bar .progress-bar-inner {
-    background-color: hsl(0, 0%, 88%);
-    display: block;
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: width 1s linear 0s;
-}
-.progress_bar .progress-bar-inner:before {
-    content: "";
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 50%;
-    width: 4px;
-    height: 4px;
-    position: absolute;
-    right: 1px;
-    top: 0;
-    z-index: 1;
-}
-.progress_bar .progress-bar-inner:after {
-    content: "";
-    width: 14px;
-    height: 14px;
-    background-color: inherit;
-    border-radius: 50%;
-    position: absolute;
-    right: -4px;
-    top: -5px;
-} */
 
 /* Section projets */
-
+#myProjects{
+    padding-bottom: 50px;
+}
 
 .allProjects{
     display: flex;
@@ -256,10 +221,55 @@ h2{
     height:100%;
 }
 
+.imgContainer:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
 .imgContainer:hover .infoHover{
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;
-    background: linear-gradient(to top,black,80%,transparent);
+    justify-content: center;
+    align-items: center;
+    padding:0 20px 0 20px;
+    background: rgba(0,0,0,90%);
+    text-align: center;
 }
 
+
+.infoHover button{
+    border-radius: 10px;
+    border: solid 2px #046a76;
+    color:white;
+    background:linear-gradient(to right,#03565f,#046a76,#048b9a);
+}
+
+.infoHover button:hover{
+    background:linear-gradient(to right,#024148,#03565f,#046a76);
+}
+
+/* Footer */
+.sociaLogo{
+    width:30px;
+    height: 30px;
+}
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #141414;
+    height: 75px;
+}
+
+.underDiv{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:20vw;
+    text-align: center;
+}
+
+.underDiv p{
+    margin:0;
+}
