@@ -11,6 +11,16 @@
         height: 29vw;
         margin: 20px 10px 0 10px;
     }
+
+    h1{
+        font-size: 40px;
+        margin-left: 150px;
+    }
+
+    #aboutMeSection p{
+        padding-left: 7vw;
+        padding-right: 50px;
+    }
 }
 
 
@@ -58,6 +68,31 @@
         height: 45vw;
         margin: 20px 10px 0 10px;
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height:auto;
+    }
+
+    .underDiv{
+        width: 100%;
+        justify-content: space-around;
+        padding : 20px 0 20px 0;
+    }
+
+    #accueilRight{
+        display:none;
+    }
+
+    nav{
+        display:none;
+    }
+
+    h1 {
+        font-size: 35px;
+        margin-left: 40px;
+    }
 }
 @media (max-width: 640px) {
     .allProjects{
@@ -82,13 +117,7 @@
         padding-left: 0;
         justify-content: center;
     }
-    #accueilRight{
-        display:none;
-    }
 
-    nav{
-        display:none;
-    }
     h1{
         margin-left: 5vw;
     }
