@@ -8,12 +8,14 @@
     <link href="https://fonts.cdnfonts.com/css/made-tommy-soft-outline" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/mediaqueries.css">
-    <script async src="./assets/javascript/vue.js"></script>
+    <script async src="./assets/javascript/script.js"></script>
+    <link rel="icon" type="image/png" href="./assets/img/YNLogo2.png" />
     <title>Yoann Nicosia - Portfolio</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav  id="mySidenav" class="sidenav">
+            <a id="closeBtn" class="close">&times;</a>
             <div class="logo">
                 <img id="profilePicture" alt="image de profil" src="./assets/img/YNLogo2.png">
             </div>
@@ -26,6 +28,13 @@
                 <a href="#footer"><li>Contact</li></a>
             </ul>
         </nav>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+        </a>
         <div id="blueRod" class="blueRod"></div>
     </header>
     <main>
