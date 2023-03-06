@@ -259,7 +259,7 @@ h2{
     height: 30px;
 }
 
-footer{
+.desktop{
     display:flex;
     justify-content: space-around;
     align-items: center;
