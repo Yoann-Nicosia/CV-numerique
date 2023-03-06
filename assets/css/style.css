@@ -9,6 +9,11 @@ body{
     display:none;
 }
 
+.container{
+    margin-left: 0;
+    max-width: 100%;
+}
+
 /* Nav bar */
 
 header{
