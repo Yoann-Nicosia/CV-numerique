@@ -1,0 +1,35 @@
+body{
+    background-image: url('../img/Fond-marbre.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+p{
+    font-size: 3rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name, .portrait{
+    width:50vw;
+}
