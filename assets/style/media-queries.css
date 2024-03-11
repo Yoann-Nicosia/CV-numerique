@@ -34,14 +34,18 @@
     }
 
     .imgSize{
-        height: 2.5em;
+        height: 3.5em;
         width: auto;
     }
 
-    /* .devIcons, .designIcons, .otherIcons{
-        position: relative;
-        z-index: 5;
-    } */
+    .devIcons, .designIcons, .otherIcons{
+        max-width: 80%;
+        padding-left: 20vw;
+    }
+
+    .designIcons{
+        padding-left: 10vw;
+    }
 
     .luciferPaint, .whiteCircle2{
         z-index: -1; 
@@ -55,14 +59,21 @@
 
     .whiteCircle2{
         bottom:-230px;
+        right: 0;
     }
 
     .skills h2{
         filter: drop-shadow(2px 4px 6px black);
+        text-align: center;
+        padding-left: 0;
     }
 
     .textProjects p{
         font-size: 2rem;
+    }
+
+    .textProjects{
+        width: auto;
     }
 
     .squareProjects{
@@ -70,8 +81,12 @@
         display: none;
     }
 
-    .myProjects{
+    #myProjects{
         height: 75vh;
+    }
+
+    nav::after{
+        width: 85%;
     }
 }
 
