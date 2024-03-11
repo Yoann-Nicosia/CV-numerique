@@ -7,6 +7,20 @@ body{
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+width: 10px; /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+background: rgb(0, 0, 0); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(55, 55, 55); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid rgb(56, 56, 56); /* creates padding around scroll thumb */
+}
+
 /* Section header */
 
 header{
@@ -297,12 +311,14 @@ position: relative;
 
 .projectContent{
     height: 50%;
+    overflow: hidden;
 }
 
 .projectContent p{
     font-family: 'Poppins';
     font-weight: 200;
     padding: 20px 50px 0 50px;
+
 }
 
 .projectHeaderImg{
