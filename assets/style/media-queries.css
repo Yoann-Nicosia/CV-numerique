@@ -29,6 +29,10 @@
         height: 5em;
         width: auto;
     }
+
+    .devIcons{
+        max-width: 80%;
+    }
 }
 
 /* Grands écrans */
