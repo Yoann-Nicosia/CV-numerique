@@ -19,7 +19,7 @@
 }
 
 /* Petits écrans d'ordinateurs portables à écrans moyens */
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1540px) {
     .skills h2{
         font-size: 3.5rem;
         padding-left: 10vw;
