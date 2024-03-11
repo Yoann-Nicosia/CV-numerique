@@ -183,7 +183,7 @@ position: relative;
     flex-wrap: wrap;
     gap: 40px;
     padding-left: 10vw;
-
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .imgSize{
@@ -267,6 +267,7 @@ position: relative;
     background-image: url('../img/instantGamingProject.png');
     background-size: cover;
     border-radius: 15px;
+    background-position: center;
 }
 
 .project2BackgroundImg{
@@ -274,6 +275,8 @@ position: relative;
     background-image: url('../img/restauProject2.png');
     background-size: cover;
     border-radius: 15px;
+    background-position: center;
+
 }
 
 .project3BackgroundImg{
@@ -281,6 +284,8 @@ position: relative;
     background-image: url('../img/crepe.png');
     background-size: cover;
     border-radius: 15px;
+    background-position: center;
+
 }
 
 .project4BackgroundImg{
@@ -288,6 +293,8 @@ position: relative;
     background-image: url('../img/chillming.png');
     background-size: cover;
     border-radius: 15px;
+    background-position: center;
+
 }
 
 .project5BackgroundImg{
@@ -295,6 +302,8 @@ position: relative;
     background-image: url('../img/velo.png');
     background-size: cover;
     border-radius: 15px;
+    background-position: center;
+
 }
 
 .projectHeader{

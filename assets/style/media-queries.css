@@ -1,6 +1,55 @@
 @media (max-width: 480px) {
-    body {
-      /* Styles */
+    .h1{
+        font-size: 3rem;
+    }
+
+    .h2{
+        font-size: 2rem;
+    }
+
+    header{
+        height: auto;
+    }
+    
+    .headerMain{
+        display: block;
+        position: relative;
+    }
+
+    .headerLeft{
+        position: absolute;
+        bottom: 0;
+        opacity: 30%;
+    }
+
+    .headerRight{
+        width: auto;
+        z-index: 2;
+        position: relative;
+    }
+
+    .skills h2{
+        font-size: 2.5rem;
+        padding-left: 10vw;
+    }
+
+    .imgSize{
+        height: 2.5em;
+        width: auto;
+    }
+
+    /* .devIcons, .designIcons, .otherIcons{
+        position: relative;
+        z-index: 5;
+    } */
+
+    .luciferPaint, .whiteCircle2{
+        z-index: -1; 
+        opacity: 30%;
+    }
+
+    .skills h2{
+        filter: drop-shadow(2px 4px 6px black);
     }
 }
 
@@ -13,8 +62,56 @@
 
 /* Tablettes grandes à petits ordinateurs portables */
 @media (min-width: 769px) and (max-width: 1024px) {
-    body {
-    /* Styles */
+    .skills h2{
+        font-size: 2.5rem;
+        padding-left: 10vw;
+    }
+
+    .imgSize{
+        height: 3.5em;
+        width: auto;
+    }
+
+    .devIcons{
+        max-width: 80%;
+    }
+
+    .luciferPaint{
+        height: 60vh;
+    }
+
+    .whiteCircle2{
+        width: 63vh;
+        height: 63vh;
+        padding: 30px;
+        bottom: -56px;
+        right: -56px;
+    }
+
+    .h1{
+        font-size: 4rem;
+    }
+
+    .h2{
+        font-size: 2.5rem;
+    }
+
+    .textProjects{
+        font-size: 1.5rem;
+        width: 40%;
+    }
+
+    #myProjects {
+        justify-content: space-around;
+    }
+
+    .projectHeader{
+        flex-direction: column;
+        padding-top: 25px;
+    }
+
+    .projectHeaderImg{
+        padding-top: 10px;
     }
 }
 
