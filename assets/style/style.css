@@ -269,6 +269,13 @@ position: relative;
     border-radius: 15px;
 }
 
+.project5BackgroundImg{
+    height: 50%;
+    background-image: url('../img/velo.png');
+    background-size: cover;
+    border-radius: 15px;
+}
+
 .projectHeader{
     display: flex;
     justify-content: space-evenly;
