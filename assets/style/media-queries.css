@@ -46,10 +46,32 @@
     .luciferPaint, .whiteCircle2{
         z-index: -1; 
         opacity: 30%;
+
+    }
+
+    .luciferPaint{
+        bottom: -100px;
+    }
+
+    .whiteCircle2{
+        bottom:-230px;
     }
 
     .skills h2{
         filter: drop-shadow(2px 4px 6px black);
+    }
+
+    .textProjects p{
+        font-size: 2rem;
+    }
+
+    .squareProjects{
+        width: auto;
+        display: none;
+    }
+
+    .myProjects{
+        height: 75vh;
     }
 }
 
