@@ -160,12 +160,13 @@ position: relative;
     color: white;
     font-family: 'Poppins';
     font-weight: bold;
-    font-size: 6rem;
+    font-size: 5.5rem;
     padding-left: 10vw;
 }
 
 .devIcons, .designIcons, .otherIcons{
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     padding-left: 10vw;
 
@@ -206,29 +207,64 @@ position: relative;
     z-index: 9;
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 .squareProjects{
-    width: 40vw;
+    width: 50%;
 }
 
 .textProjects{
-    width: 40vw;
+    width: 50%;
+}
+
+.texte{
+    width: 90%;
 }
 
 .singleProject{
+    position: relative;
+    height: 100vh;
+}
+
+.project1, .project2, .project3, .project4, .project5{
+    position: absolute;
+    bottom: 50px;
+    left:50px;
     color: white;
-    height: 50vh;
-    width: 50vh;
+    height: 70vh;
+    width: 90%;
     border: solid 1px white;
+    border-radius: 15px;
+    opacity:0;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+    position: absolute;
+    /* Ajoutez d'autres styles selon vos besoins */
+}
+
+
+.project1BackgroundImg{
+    height: 50%;
+    background-image: url('../img/instantGamingProject.png');
+    background-size: cover;
     border-radius: 15px;
 }
 
-.projectBackgroundImg{
+.project2BackgroundImg{
     height: 50%;
-    background-image: url('../img/instantGamingProject.png');
+    background-image: url('../img/restauProject2.png');
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.project4BackgroundImg{
+    height: 50%;
+    background-image: url('../img/chillming.png');
     background-size: cover;
     border-radius: 15px;
 }
@@ -274,6 +310,7 @@ position: relative;
 .textProjects p{
     border-bottom: 2px solid white;
 }
+
 
 
 
