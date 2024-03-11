@@ -38,7 +38,8 @@
 
     .text{
         padding: 30px;
-        filter: drop-shadow(2px 4px 6px black);
+        color: white;
+        filter: drop-shadow(2px 3px 2px black);
     }
 
     .headerLeft img{
