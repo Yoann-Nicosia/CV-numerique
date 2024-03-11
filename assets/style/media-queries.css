@@ -24,6 +24,11 @@
         font-size: 3.5rem;
         padding-left: 10vw;
     }
+
+    .imgSize{
+        height: 5em;
+        width: auto;
+    }
 }
 
 /* Grands écrans */
