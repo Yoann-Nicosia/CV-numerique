@@ -262,6 +262,13 @@ position: relative;
     border-radius: 15px;
 }
 
+.project3BackgroundImg{
+    height: 50%;
+    background-image: url('../img/crepe.png');
+    background-size: cover;
+    border-radius: 15px;
+}
+
 .project4BackgroundImg{
     height: 50%;
     background-image: url('../img/chillming.png');
