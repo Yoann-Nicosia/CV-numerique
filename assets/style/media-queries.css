@@ -26,6 +26,28 @@
         width: auto;
         z-index: 2;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h1::after{
+        width: 90%;
+    }
+
+    .text{
+        padding: 30px;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+
+    .headerLeft img{
+        width: 85vw;
+    }
+
+    .blackSquare{
+        width: 95vw;
+        height: 85vw;
     }
 
     .skills h2{
