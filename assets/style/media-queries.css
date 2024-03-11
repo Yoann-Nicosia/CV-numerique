@@ -115,8 +115,117 @@
 
 /* Petites tablettes à tablettes (portrait et paysage) */
 @media (min-width: 481px) and (max-width: 768px) {
-    body {
-    /* Styles */
+    .h1{
+        font-size: 3rem;
+    }
+
+    .h2{
+        font-size: 2rem;
+    }
+
+    header{
+        height: auto;
+    }
+    
+    .headerMain{
+        display: block;
+        position: relative;
+    }
+
+    .headerLeft{
+        position: absolute;
+        bottom: 0;
+        opacity: 30%;
+    }
+
+    .headerRight{
+        width: auto;
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h1::after{
+        width: 90%;
+    }
+
+    .text{
+        padding: 30px;
+        color: white;
+        filter: drop-shadow(2px 3px 2px black);
+    }
+
+    .headerLeft img{
+        width: 85vw;
+    }
+
+    .blackSquare{
+        width: 95vw;
+        height: 85vw;
+    }
+
+    .skills h2{
+        font-size: 2.5rem;
+        padding-left: 10vw;
+    }
+
+    .imgSize{
+        height: 3.5em;
+        width: auto;
+    }
+
+    .devIcons, .designIcons, .otherIcons{
+        max-width: 80%;
+        padding-left: 20vw;
+    }
+
+    .designIcons{
+        padding-left: 10vw;
+    }
+
+    .luciferPaint, .whiteCircle2{
+        z-index: -1; 
+        opacity: 30%;
+
+    }
+
+    .luciferPaint{
+        bottom: -100px;
+    }
+
+    .whiteCircle2{
+        bottom:-230px;
+        right: 0;
+    }
+
+    .skills h2{
+        filter: drop-shadow(2px 4px 6px black);
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .textProjects p{
+        font-size: 2rem;
+    }
+
+    .textProjects{
+        width: auto;
+    }
+
+    .squareProjects{
+        width: auto;
+        display: none;
+    }
+
+    #myProjects{
+        height: 75vh;
+    }
+
+    nav::after{
+        width: 85%;
     }
 }
 
